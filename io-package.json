@@ -1,0 +1,105 @@
+{
+    "common": {
+        "name": "cupra-connect",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "titleLang": {
+            "en": "We Connect Cupra",
+            "de": "Wir verbinden Cupra",
+            "ru": "Мы соединяем Купру",
+            "pt": "Nós conectamos Cupra",
+            "nl": "Wij verbinden Cupra",
+            "fr": "Nous connectons Cupra",
+            "it": "Colleghiamo Cupra",
+            "es": "Conectamos Cupra",
+            "pl": "Łączymy Cuprę",
+            "uk": "Ми підключаємо Cupra",
+            "zh-cn": "我们连接库普拉"
+        },
+        "desc": {
+            "en": "Connects the WeConnect API for use with Cupra Cars",
+            "de": "Verbindet die WeConnect-API zur Verwendung mit Cupra-Autos",
+            "ru": "Подключает API WeConnect для использования с Cupra Cars.",
+            "pt": "Conecta a API WeConnect para uso com Cupra Cars",
+            "nl": "Verbindt de WeConnect API voor gebruik met Cupra Cars",
+            "fr": "Connecte l'API WeConnect pour une utilisation avec Cupra Cars",
+            "it": "Connette l'API WeConnect per l'utilizzo con Cupra Cars",
+            "es": "Conecta la API WeConnect para usar con Cupra Cars",
+            "pl": "Łączy interfejs API WeConnect do użytku z Cupra Cars",
+            "uk": "Підключає WeConnect API для використання з Cupra Cars",
+            "zh-cn": "连接 WeConnect API 以与 Cupra 汽车一起使用"
+        },
+        "authors": ["Robert Seidt <robert.seidt@gmail.com>"],
+        "keywords": ["template", "automation", "IoT", "integration"],
+        "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "cupra-connect.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/rseidt/ioBroker.cupra-connect/main/admin/cupra-connect.png",
+        "readme": "https://github.com/rseidt/ioBroker.cupra-connect/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "vehicle",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=6.0.11"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=7.0.23"
+            }
+        ]
+    },
+    "native": {
+        "initialRefreshToken": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

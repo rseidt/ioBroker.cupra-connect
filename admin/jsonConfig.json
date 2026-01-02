@@ -1,0 +1,26 @@
+{
+    "i18n": false,
+    "type": "panel",
+    "items": {
+        "initialRefreshToken": {
+            "type": "text",
+            "label": "Cupra Connect Refresh Token",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "vin": {
+            "type": "text",
+            "label": "Vehicle identificaten number (VIN)",
+            "newLine": false,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        }
+    }
+}

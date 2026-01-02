@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/models/seat-user-info.ts"],
+  "sourcesContent": ["/**\n * User info of Seat Account\n */\nexport interface SeatUserInfo {\n    /**\n     * The UUID, will be used in other API requests\n     */\n    sub: string;\n    /**\n     * Display Name\n     */\n    name: string;\n    /**\n     * Given Name\n     */\n    given_name: string;\n    /**\n     * Last Name\n     */\n    family_name: string;\n    /**\n     * Nickname\n     */\n    nickname: string;\n    /**\n     * E-Mail\n     */\n    email: string;\n    /**\n     * Weather the e-mal is confirmed\n     */\n    email_verified: boolean;\n    /**\n     * Epoch timestamp when the profile was last updated\n     */\n    updated_at: number;\n    /**\n     * orl of picture (needs access token to get retured)\n     */\n    picture: string;\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}
